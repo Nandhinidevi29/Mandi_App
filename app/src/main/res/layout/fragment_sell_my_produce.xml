@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MatchParentLayout"
+        tools:context=".SellMyProduceFragment">
+
+        <TextView
+            android:id="@+id/mandiTitle"
+            style="@style/TitleStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/sellerName"
+            layout="@layout/seller_card_view"
+            style="@style/SectionLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mandiTitle" />
+
+        <include
+            android:id="@+id/loyaltyCardInfo"
+            layout="@layout/seller_card_view"
+            style="@style/SectionLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sellerName" />
+
+        <include
+            android:id="@+id/village"
+            layout="@layout/seller_card_view"
+            style="@style/SectionLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loyaltyCardInfo" />
+
+        <include
+            android:id="@+id/grossWeight"
+            layout="@layout/seller_card_view"
+            style="@style/SectionLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/village" />
+
+        <include
+            android:id="@+id/grossPrice"
+            layout="@layout/gross_price_info"
+            style="@style/SectionLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grossWeight" />
+
+        <Button
+            android:id="@+id/sellMyProduceButton"
+            style="@style/ActionButtonStyle"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grossPrice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

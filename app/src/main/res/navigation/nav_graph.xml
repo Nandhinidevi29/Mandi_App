@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SellMyProduceFragment">
+
+    <fragment
+        android:id="@+id/SellMyProduceFragment"
+        android:name="com.example.mandi.SellMyProduceFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_sell_my_produce">
+
+        <action
+            android:id="@+id/navigate_to_sell_my_produce_success_fragment"
+            app:destination="@id/SellMyProduceSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SellMyProduceSuccessFragment"
+        android:name="com.example.mandi.SellMyProduceSuccessFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_sell_my_produce_success">
+        <argument
+            android:name="param_seller_info_data_model"
+            app:argType="com.example.mandi.SellerInfoDataModel" />
+        <action
+            android:id="@+id/navigate_to_sell_my_produce_fragment"
+            app:destination="@id/SellMyProduceFragment" />
+    </fragment>
+</navigation>

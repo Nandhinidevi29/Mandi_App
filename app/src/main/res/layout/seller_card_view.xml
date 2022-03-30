@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SectionLayout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/MatchParentLayout"
+        app:cardBackgroundColor="@color/card_background_color"
+        app:cardCornerRadius="@dimen/title_margin_left"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardMaxElevation="@dimen/card_max_elevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            style="@style/SectionLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                style="@style/WrapContentLayout"
+                android:layout_marginLeft="@dimen/title_margin_left"
+                android:paddingTop="@dimen/title_margin_left" />
+
+            <EditText
+                android:id="@+id/textInput"
+                android:enabled="false"
+                style="@style/EditTextStyle"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

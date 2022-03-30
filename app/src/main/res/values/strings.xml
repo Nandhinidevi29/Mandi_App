@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Mandi</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Sell My Produce Fragment</string>
+    <string name="second_fragment_label">Sell My Produce Success Fragment</string>
+    <string name="sell_my_produce">Sell My Produce</string>
+    <string name="sell_more">Sell More</string>
+    <string name="seller_name">Seller name</string>
+    <string name="loyalty_card_id">Loyalty card identifier</string>
+    <string name="village">Village</string>
+    <string name="gross_weight">Gross weight</string>
+    <string name="mandi_title">Mandi</string>
+    <string name="gross_price_title">Gross Price</string>
+    <string name="gross_price">%s INR</string>
+    <string name="applied_loyalty_index">Applied loyalty index: %s</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="thank_you_message">Thank you %s for selling your quality produce.</string>
+    <string name="info_text">Please ensure you received %s INR for %d Tonnes of your produce.</string>
+</resources>

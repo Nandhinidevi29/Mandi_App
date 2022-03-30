@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="ActionButtonStyle" parent="MatchParentLayout">
+        <item name="android:text">@string/sell_my_produce</item>
+        <item name="android:layout_marginTop">@dimen/action_button_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/action_button_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/action_button_margin_top</item>
+        <item name="android:backgroundTint">@color/sell_my_produce_button_color</item>
+    </style>
+
+    <style name="TitleStyle" parent="SectionLayout">
+        <item name="android:layout_marginLeft">@dimen/title_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/title_margin_top</item>
+        <item name="android:text">@string/mandi_title</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="LoyaltyIndexStyle" parent="WrapContentLayout">
+        <item name="android:layout_marginLeft">@dimen/action_button_margin_top</item>
+        <item name="android:layout_marginTop">@dimen/title_margin_left</item>
+        <item name="android:text">@string/applied_loyalty_index</item>
+        <item name="android:textColor">@color/loyalty_index_text_color</item>
+        <item name="android:textSize">@dimen/loyalty_index_title_text_size</item>
+    </style>
+    <style name="GrossInfoStyle" parent="WrapContentLayout">
+        <item name="android:layout_marginRight">@dimen/action_button_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/action_button_margin_top</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/gross_info_text_size</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+        <item name="android:layout_marginStart">@dimen/title_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/title_margin_left</item>
+        <item name="android:layout_marginEnd">@dimen/action_button_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/action_button_margin_top</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:inputType">text</item>
+    </style>
+    <style name="WrapContentLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchParentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="SectionLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
